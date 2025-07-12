@@ -1,0 +1,75 @@
+.hero-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.hero-unit-space .hero-image,
+.hero-unit-moon-exploration .hero-image {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-unit-space .hero-image {
+    background-position: 55%;
+}
+
+.hero-unit-space .hero-image {
+  height: 960px;
+  background-image: url("../images/final-frontier_large.jpg");
+}
+
+.hero-copy {
+    max-width: 80%;
+}
+
+/* @media only screen and (min-width: 1441px) {
+  .hero-unit-space .hero-image {
+    background-size: cover;
+    background-position: 50%;
+  }
+} */
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx) {
+  .hero-unit-space .hero-image {
+    background-image: url("../images/final-frontier_large_2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .hero-unit-space .hero-image {
+    height: 712px;
+    background-image: url("../images/final-frontier_medium.jpg");
+  }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+  .hero-unit-space .hero-image {
+    background-image: url("../images/final-frontier_medium_2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-unit-space .hero-image {
+    height: 490px;
+    background-image: url("../images/final-frontier_small.jpg");
+  }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+  .hero-unit-space .hero-image {
+    background-image: url("../images/final-frontier_small_2x.jpg");
+  }
+}
