@@ -12,24 +12,15 @@
 }
 
 .hero-unit-space .hero-image {
-    background-position: 55%;
-}
-
-.hero-unit-space .hero-image {
+  background-position: 55%; /* Magic number, luckily it is a 5 multiple.*/
   height: 960px;
   background-image: url("../images/final-frontier_large.jpg");
 }
 
 .hero-copy {
-    max-width: 80%;
+  max-width: 80%;
+  color: #fff;
 }
-
-/* @media only screen and (min-width: 1441px) {
-  .hero-unit-space .hero-image {
-    background-size: cover;
-    background-position: 50%;
-  }
-} */
 
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
