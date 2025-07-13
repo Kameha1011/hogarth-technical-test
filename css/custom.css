@@ -24,11 +24,10 @@
 
 .gallery-table {
   width: 100%;
+  border-spacing: 0;
 }
 
-.gallery-table,
-.gallery-table-row,
-.gallery-table-cel {
+.gallery-table-cell {
   border: none;
   padding: 0;
   margin: 0;
