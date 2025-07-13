@@ -22,6 +22,18 @@
   color: #fff;
 }
 
+.gallery-table {
+  width: 100%;
+}
+
+.gallery-table,
+.gallery-table-row,
+.gallery-table-cel {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -47,6 +59,16 @@
 }
 
 @media only screen and (max-width: 735px) {
+  .gallery-table-row {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .gallery-table-cell {
+    display: block;
+  }
+
   .hero-wrapper {
     flex-direction: column;
   }
